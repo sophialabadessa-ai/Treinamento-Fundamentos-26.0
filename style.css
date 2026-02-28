@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #fcfaf5; 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #2c2c2c;
+}
+
+header {
+    background-color: #d32f2f; 
+    color: white;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-principal {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    color: #d32f2f;
+}
+#container-momentos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 5% 50px 5%;
+}
+.momento-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 8px solid #d32f2f;
+}
+
+.momento-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #d32f2f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.produto-card {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.produto-card:hover {
+    border-color: #d32f2f;
+    transform: translateY(-5px);
+}
+.nivel-calma {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 15px 0;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    flex: 1;
+}
+button.btn-remove {
+    background-color: #666;
+}
+
+button:hover {
+    opacity: 0.8;
+}
