@@ -121,3 +121,25 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
+img, video {
+    max-width: 100%; 
+    height: auto;    
+}
+
+.container {
+    width: 90%;      
+    margin: 0 auto;  
+    max-width: 1200px; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; 
+}
+
+@media (min-width: 768px) {
+    .menu {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
